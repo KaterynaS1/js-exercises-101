@@ -64,3 +64,24 @@ console.log(solveQuadEquation(1, -1, -2)) // {2, -1}
 console.log(solveQuadEquation(1, 7, 12)) // {-3, -4}
 console.log(solveQuadEquation(1, 0, -4)) //{2, -2}
 console.log(solveQuadEquation(1, -1, 0)) //{1, 0}
+
+/*
+1. Declare a function name _printArray_. It takes array as a parameter and it prints out each value of the array.
+*/
+/*
+pseudocode
+create array
+create function
+takes array created before
+create a loop
+print as long as array.lenght is
+*/
+
+
+function printArray(arr) {
+for (let i=0; i < arr.length; i++) {
+console.log(arr[i]);
+}
+}
+let array = [1, 2, 3, 4, 5];
+printArray(array);
