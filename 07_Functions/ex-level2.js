@@ -85,3 +85,30 @@ console.log(arr[i]);
 }
 let array = [1, 2, 3, 4, 5];
 printArray(array);
+
+/* Write a function name _showDateTime_ which shows time in this format: 08/01/2020 04:08 using the Date object.
+    showDateTime()
+    08/01/2020 04:08
+*/
+/*
+pseudocode
+declare function
+get date 
+day/month/year time
+*/
+(function() {
+let now = new Date();
+let date = now.getDate() + '/' + (now.getMonth()+1) + '/' + now.getFullYear();
+let time = now.getHours() + ':' + now.getMinutes();
+console.log(date + ' ' + time);
+}
+)()
+
+/*
+Declare a function name _swapValues_. This function swaps value of x to y.
+
+    ```js
+    swapValues(3, 4) // x => 4, y=>3
+    swapValues(4, 5) // x = 5, y = 4
+*/
+
