@@ -111,4 +111,35 @@ Declare a function name _swapValues_. This function swaps value of x to y.
     swapValues(3, 4) // x => 4, y=>3
     swapValues(4, 5) // x = 5, y = 4
 */
+function swapValues(x, y){
+let newX = y;
+let newY = x;
+return "x = " + newX + ", " + "y = " + newY;
+}
+console.log(swapValues(3, 4)) // x => 4, y=>3
+
+/*
+Declare a function name _reverseArray_. It takes array as a parameter and it returns the reverse of the array (don't use method).
+
+    ```js
+    console.log(reverseArray([1, 2, 3, 4, 5]))
+    //[5, 4, 3, 2, 1]
+    console.log(reverseArray(['A', 'B', 'C']))
+    //['C', 'B', 'A']
+*/
+//DIDN"T USE METHOD
+function reverseArray(arr){
+let newArray = [];
+for (let i = 0; i<arr.length; i++){
+newArray[i] = arr[arr.length-i-1];
+}
+return newArray;
+}
+console.log(reverseArray([1, 2, 3, 4, 5]))
+
+//USED METHOD
+function reverseArray2(arr){
+return arr.reverse();
+}
+console.log(reverseArray2([1, 2, 3, 4, 5]))
 
