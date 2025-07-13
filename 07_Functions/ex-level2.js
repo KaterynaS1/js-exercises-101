@@ -143,3 +143,48 @@ return arr.reverse();
 }
 console.log(reverseArray2([1, 2, 3, 4, 5]))
 
+/*
+Declare a function name _capitalizeArray_. It takes array as a parameter and it returns the - capitalizedarray
+*/
+
+function capitalizedArray(arr){
+    let newArray = [];
+    let word;
+    for(let i = 0; i<arr.length; i++){
+    word = arr[i];
+    newArray[i] = word.toUpperCase();
+    }
+    return newArray;
+}
+let arr3 = ['ja', 'ty', 'wy'];
+console.log(capitalizedArray(arr3));
+/*
+1. Declare a function name _addItem_. It takes an item parameter and it returns an array after adding the item
+*/
+let items = [];
+function addItem(item){
+    items.push(item);
+    return items;
+}
+console.log(addItem("table"));
+console.log(addItem("apple"));
+
+/*
+Declare a function name _removeItem_. It takes an index parameter and it returns an array after removing an item
+*/
+let items2 = ["orange", "banana", "apple", "peach"];
+
+function removeItem(index) {
+    let newArray = [];
+    let i = 0, j = 0;
+    do {
+        if (i !== index) {
+            newArray[j] = items2[i];
+            j++;
+        }
+        i++;
+    } while (i < items2.length);
+    return newArray;
+}
+
+console.log(removeItem(1));
