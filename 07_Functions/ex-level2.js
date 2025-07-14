@@ -188,3 +188,5 @@ function removeItem(index) {
 }
 
 console.log(removeItem(1));
+
+console.log("hello");
